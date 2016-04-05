@@ -1,0 +1,22 @@
+{
+  "name": "cocalc",
+  "version": "0.0.1",
+  "description": "COC Calulator & Recorder",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Dafrok/cocalc.git"
+  },
+  "keywords": [
+    "COC"
+  ],
+  "author": "Dafrok",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Dafrok/cocalc/issues"
+  },
+  "homepage": "https://github.com/Dafrok/cocalc#readme"
+}
