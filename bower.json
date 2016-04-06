@@ -1,0 +1,24 @@
+{
+  "name": "cocalc",
+  "description": "COC Calulator & Recorder",
+  "main": "index.js",
+  "authors": [
+    "Dafrok"
+  ],
+  "license": "MIT",
+  "keywords": [
+    "COC"
+  ],
+  "homepage": "https://github.com/Dafrok/cocalc",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "polymer": "Polymer/polymer#^1.4.0",
+    "iron-input": "^1.0.9"
+  }
+}

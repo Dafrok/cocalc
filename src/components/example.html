@@ -1,0 +1,19 @@
+<link rel="import" href="../../static/vendor/polymer/polymer.html">
+<link rel="import" href="../../static/vendor/iron-input/iron-input.html">
+<dom-module id="polymer-example">
+    <template>
+        <input bind-value="{{text}}" is="iron-input" placeholder="Your name here...">
+        <span>{{text}}</span>
+    </template>
+    <script>
+    Polymer({
+        is: "polymer-example",
+        properties: {
+            text: {
+                type: String,
+                value: "Hello world!"
+            }
+        }
+    });
+    </script>
+</dom-module>

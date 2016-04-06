@@ -4,7 +4,7 @@
   "description": "COC Calulator & Recorder",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "browser-sync start --server ./ --index /src/index.html"
   },
   "repository": {
     "type": "git",
@@ -18,5 +18,13 @@
   "bugs": {
     "url": "https://github.com/Dafrok/cocalc/issues"
   },
-  "homepage": "https://github.com/Dafrok/cocalc#readme"
+  "homepage": "https://github.com/Dafrok/cocalc#readme",
+  "dependencies": {
+    "vue": "^1.0.20",
+    "vuex": "^0.6.2"
+  },
+  "devDependencies": {
+    "browser-sync": "^2.11.2",
+    "webpack": "^1.12.14"
+  }
 }
