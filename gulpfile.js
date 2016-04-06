@@ -5,7 +5,7 @@ gulp.task('reload', [], () => {
     browserSync.reload()
 })
 
-gulp.task('browser-sync', ['base'], () => {
+gulp.task('browser-sync', [], () => {
     browserSync.init({
         server: {
             baseDir: ''

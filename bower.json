@@ -19,6 +19,11 @@
   ],
   "dependencies": {
     "polymer": "Polymer/polymer#^1.4.0",
-    "iron-input": "^1.0.9"
+    "iron-input": "^1.0.9",
+    "paper-header-panel": "PolymerElements/paper-header-panel#~1.1.5",
+    "paper-toolbar": "PolymerElements/paper-toolbar#~1.1.4",
+    "paper-drawer-panel": "PolymerElements/paper-drawer-panel#~1.0.9",
+    "paper-tabs": "PolymerElements/paper-tabs#~1.5.0",
+    "iron-icons": "PolymerElements/iron-icons#~1.1.3"
   }
 }
