@@ -19,12 +19,9 @@
     "url": "https://github.com/Dafrok/cocalc/issues"
   },
   "homepage": "https://github.com/Dafrok/cocalc#readme",
-  "dependencies": {
-    "vue": "^1.0.20",
-    "vuex": "^0.6.2"
-  },
+  "dependencies": {},
   "devDependencies": {
     "browser-sync": "^2.11.2",
-    "webpack": "^1.12.14"
+    "gulp": "^3.9.1"
   }
 }
