@@ -12,14 +12,7 @@ gulp.task('browser-sync', [], () => {
         }
     })
     gulp.watch('./components/**/*.*', ['reload'])
-    gulp.watch('./vendor/**/*.*', ['reload'])
     gulp.watch('./index.html', ['reload'])
-})
-
-gulp.task('base', [], () => {
-    gulp
-        .src('./bower_components/**')
-        .pipe(gulp.dest('./vendor'))
 })
 
 gulp.task('default', ['browser-sync'], () => {
