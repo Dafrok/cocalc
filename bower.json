@@ -27,6 +27,7 @@
     "iron-icons": "PolymerElements/iron-icons#~1.1.3",
     "paper-menu": "^1.2.2",
     "paper-item": "^1.1.4",
-    "paper-ripple": "*"
+    "paper-ripple": "*",
+    "iron-pages": "~1.0.7"
   }
 }

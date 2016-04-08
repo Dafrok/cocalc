@@ -11,7 +11,7 @@ gulp.task('browser-sync', [], () => {
             baseDir: ''
         }
     })
-    gulp.watch('./components/**/*.*', ['reload'])
+    gulp.watch('./components/**', ['reload'])
     gulp.watch('./index.html', ['reload'])
 })
 

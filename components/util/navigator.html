@@ -1,0 +1,37 @@
+<link rel="import" href="/bower_components/polymer/polymer.html">
+<link rel="import" href="/bower_components/iron-input/iron-input.html">
+
+<link rel="import" href="/bower_components/paper-menu/paper-menu.html">
+<link rel="import" href="/bower_components/paper-item/paper-item.html">
+<link rel="import" href="/bower_components/paper-ripple/paper-ripple.html">
+<link rel="import" href="/bower_components/paper-header-panel/paper-header-panel.html">
+<link rel="import" href="/bower_components/paper-toolbar/paper-toolbar.html">
+<dom-module id="polymer-example">
+    <template>
+      <paper-header-panel drawer>
+          <paper-toolbar>
+              <div>COCALC</div>
+          </paper-toolbar>
+          <paper-menu>
+              <paper-item>Recents<paper-ripple></paper-ripple></paper-item>
+              <paper-item>Members<paper-ripple></paper-ripple></paper-item>
+              <paper-item>Wars<paper-ripple></paper-ripple></paper-item>
+              <paper-item>Power<paper-ripple></paper-ripple></paper-item>
+              <paper-item>Calculagraph<paper-ripple></paper-ripple></paper-item>
+              <paper-item>Charts<paper-ripple></paper-ripple></paper-item>
+              <paper-item>About<paper-ripple></paper-ripple></paper-item>
+          </paper-menu>
+      </paper-header-panel>
+    </template>
+    <script>
+    Polymer({
+        is: "polymer-example",
+        properties: {
+            text: {
+                type: String,
+                value: "Hello world!"
+            }
+        }
+    });
+    </script>
+</dom-module>
