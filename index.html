@@ -21,7 +21,16 @@
         <link rel="import" href="/bower_components/paper-menu/paper-menu.html">
         <link rel="import" href="/bower_components/paper-item/paper-item.html">
         <link rel="import" href="/bower_components/paper-ripple/paper-ripple.html">
+        <link rel="import" href="/components/util/routing.html">
         <link rel="import" href="/components/example.html">
+        <!--Pages-->
+        <link rel="import" href="/components/recents/index.html">
+        <link rel="import" href="/components/members/index.html">
+        <link rel="import" href="/components/wars/index.html">
+        <link rel="import" href="/components/power/index.html">
+        <link rel="import" href="/components/calculagraph/index.html">
+        <link rel="import" href="/components/charts/index.html">
+        <link rel="import" href="/components/about/index.html">
     </head>
     <body unresolved class="fullbleed vertical layout">
         <template is="dom-bind" id="app">
@@ -31,55 +40,55 @@
                         <div>COCALC</div>
                     </paper-toolbar>
                     <paper-menu attr-for-selected="data-route" selected="[[route]]">
-                        <paper-item>
-                            <a data-route="recents">
-                                <iron-icon icon="notification:event-note"></iron-icon>
-                                <span>Recents</span>
-                            </a>
-                            <paper-ripple></paper-ripple>
-                        </paper-item>
-                        <paper-item>
-                            <a data-route="members">
-                                <iron-icon icon="social:people"></iron-icon>
-                                <span>Members</span>
-                            </a>
-                            <paper-ripple></paper-ripple>
-                        </paper-item>
-                        <paper-item>
-                            <a data-route="wars">
-                                <iron-icon icon="maps:local-dining"></iron-icon>
-                                <span>Wars</span>
-                            </a>
-                            <paper-ripple></paper-ripple>
-                        </paper-item>
-                        <paper-item>
-                            <a>
+                        <a data-route="recents" href="{{baseUrl}}recents">
+                            <paper-item>
+                                    <iron-icon icon="notification:event-note"></iron-icon>
+                                    <span>Recents</span>
+                                <paper-ripple></paper-ripple>
+                            </paper-item>
+                        </a>
+                        <a data-route="members" href="{{baseUrl}}members">
+                            <paper-item>
+                                    <iron-icon icon="social:people"></iron-icon>
+                                    <span>Members</span>
+                                <paper-ripple></paper-ripple>
+                            </paper-item>
+                        </a>
+                        <a data-route="wars" href="{{baseUrl}}wars">
+                            <paper-item>
+                                    <iron-icon icon="maps:local-dining"></iron-icon>
+                                    <span>Wars</span>
+                                <paper-ripple></paper-ripple>
+                            </paper-item>
+                        </a>
+                        <a data-route="power" href="{{baseUrl}}power">
+                            <paper-item>
                                 <iron-icon icon="places:fitness-center"></iron-icon>
                                 <span>Power</span>
-                            </a>
-                            <paper-ripple></paper-ripple>
-                        </paper-item>
-                        <paper-item>
-                            <a>
+                                <paper-ripple></paper-ripple>
+                            </paper-item>
+                        </a>
+                        <a data-route="calculagraph" href="{{baseUrl}}calculagraph">
+                            <paper-item>
                                 <iron-icon icon="image:timer"></iron-icon>
                                 <span>Calculagraph</span>
-                            </a>
-                            <paper-ripple></paper-ripple>
-                        </paper-item>
-                        <paper-item>
-                            <a>
+                                <paper-ripple></paper-ripple>
+                            </paper-item>
+                        </a>
+                        <a data-route="charts" href="{{baseUrl}}charts">
+                            <paper-item>
                                 <iron-icon icon="social:poll"></iron-icon>
                                 <span>Charts</span>
-                            </a>
-                            <paper-ripple></paper-ripple>
-                        </paper-item>
-                        <paper-item>
-                            <a>
+                                <paper-ripple></paper-ripple>
+                            </paper-item>
+                        </a>
+                        <a data-route="about" href="{{baseUrl}}about">
+                            <paper-item>
                                 <iron-icon icon="info"></iron-icon>
                                 <span>About</span>
-                            </a>
-                            <paper-ripple></paper-ripple>
-                        </paper-item>
+                                <paper-ripple></paper-ripple>
+                            </paper-item>
+                        </a>
                     </paper-menu>
                 </paper-header-panel>
                 <paper-header-panel main>
@@ -88,9 +97,13 @@
                         <div>Page</div>
                     </paper-toolbar>
                     <iron-pages attr-for-selected="data-route" selected="{{route}}">
-                        <section data-route="recents">Recents</section>
-                        <section data-route="members"><polymer-example></section>
-                        <section data-route="wars">Wars</section>
+                        <page-recents data-route="recents"></page-recents>
+                        <page-members data-route="members"></page-members>
+                        <page-wars data-route="wars"></page-wars>
+                        <page-power data-route="power"></page-power>
+                        <page-calculagraph data-route="calculagraph"></page-calculagraph>
+                        <page-charts data-route="charts"></page-charts>
+                        <page-about data-route="about"></page-about>
                     </iron-pages>
                 </paper-header-panel>
             </paper-drawer-panel>

@@ -12,6 +12,7 @@ gulp.task('browser-sync', [], () => {
         }
     })
     gulp.watch('./components/**', ['reload'])
+    gulp.watch('./static/**', ['reload'])
     gulp.watch('./index.html', ['reload'])
 })
 
