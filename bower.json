@@ -28,6 +28,7 @@
     "paper-menu": "^1.2.2",
     "paper-item": "^1.1.4",
     "paper-ripple": "*",
-    "iron-pages": "~1.0.7"
+    "iron-pages": "~1.0.7",
+    "iron-icon": "~1.0.8"
   }
 }

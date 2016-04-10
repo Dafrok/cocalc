@@ -13,6 +13,11 @@
         <link rel="import" href="/bower_components/paper-toolbar/paper-toolbar.html">
         <link rel="import" href="/bower_components/paper-icon-button/paper-icon-button.html">
         <link rel="import" href="/bower_components/iron-icons/iron-icons.html">
+        <link rel="import" href="/bower_components/iron-icons/notification-icons.html">
+        <link rel="import" href="/bower_components/iron-icons/maps-icons.html">
+        <link rel="import" href="/bower_components/iron-icons/social-icons.html">
+        <link rel="import" href="/bower_components/iron-icons/places-icons.html">
+        <link rel="import" href="/bower_components/iron-icons/image-icons.html">
         <link rel="import" href="/bower_components/iron-flex-layout/iron-flex-layout.html">
         <link rel="import" href="/bower_components/iron-pages/iron-pages.html">
         <link rel="import" href="/bower_components/paper-menu/paper-menu.html">
@@ -26,14 +31,56 @@
                 <paper-toolbar>
                     <div>COCALC</div>
                 </paper-toolbar>
-                <paper-menu>
-                    <paper-item><a data-route="recents">Recents</a><paper-ripple></paper-ripple></paper-item>
-                    <paper-item><a data-route="members">Members</a><paper-ripple></paper-ripple></paper-item>
-                    <paper-item><a data-route="wars">Wars</a><paper-ripple></paper-ripple></paper-item>
-                    <paper-item>Power<paper-ripple></paper-ripple></paper-item>
-                    <paper-item>Calculagraph<paper-ripple></paper-ripple></paper-item>
-                    <paper-item>Charts<paper-ripple></paper-ripple></paper-item>
-                    <paper-item>About<paper-ripple></paper-ripple></paper-item>
+                <paper-menu attr-for-selected="data-route" selected="">
+                    <paper-item>
+                        <a data-route="recents">
+                            <iron-icon icon="notification:event-note"></iron-icon>
+                            <span>Recents</span>
+                        </a>
+                        <paper-ripple></paper-ripple>
+                    </paper-item>
+                    <paper-item>
+                        <a data-route="members">
+                            <iron-icon icon="social:people"></iron-icon>
+                            <span>Members</span>
+                        </a>
+                        <paper-ripple></paper-ripple>
+                    </paper-item>
+                    <paper-item>
+                        <a data-route="wars">
+                            <iron-icon icon="maps:local-dining"></iron-icon>
+                            <span>Wars</span>
+                        </a>
+                        <paper-ripple></paper-ripple>
+                    </paper-item>
+                    <paper-item>
+                        <a>
+                            <iron-icon icon="places:fitness-center"></iron-icon>
+                            <span>Power</span>
+                        </a>
+                        <paper-ripple></paper-ripple>
+                    </paper-item>
+                    <paper-item>
+                        <a>
+                            <iron-icon icon="image:timer"></iron-icon>
+                            <span>Calculagraph</span>
+                        </a>
+                        <paper-ripple></paper-ripple>
+                    </paper-item>
+                    <paper-item>
+                        <a>
+                            <iron-icon icon="social:poll"></iron-icon>
+                            <span>Charts</span>
+                        </a>
+                        <paper-ripple></paper-ripple>
+                    </paper-item>
+                    <paper-item>
+                        <a>
+                            <iron-icon icon="info"></iron-icon>
+                            <span>About</span>
+                        </a>
+                        <paper-ripple></paper-ripple>
+                    </paper-item>
                 </paper-menu>
             </paper-header-panel>
             <paper-header-panel main>
@@ -48,10 +95,5 @@
                 </iron-pages>
             </paper-header-panel>
         </paper-drawer-panel>
-        <script>
-            page('/members', function () {
-              app.route = 'members';
-            });
-        </script>
     </body>
 </html>
