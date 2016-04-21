@@ -11,7 +11,7 @@ window.addEventListener('WebComponentsReady', function() {
     // Middleware
     function scrollToTop(ctx, next) {
     //   app.scrollPageToTop();
-      next();
+        next();
     }
     function closeDrawer(ctx, next) {
     //   app.closeDrawer();
@@ -19,7 +19,7 @@ window.addEventListener('WebComponentsReady', function() {
     }
     // Routes
     page('*', scrollToTop, closeDrawer, function(ctx, next) {
-      next();
+        next();
     })
     page('/', function() {
         app.route = 'home'

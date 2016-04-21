@@ -22,6 +22,7 @@
         <link rel="import" href="/bower_components/paper-item/paper-item.html">
         <link rel="import" href="/bower_components/paper-ripple/paper-ripple.html">
         <link rel="import" href="/components/util/routing.html">
+        <link rel="import" href="/components/util/page-name.html">
         <link rel="import" href="/components/example.html">
         <!--Pages-->
         <link rel="import" href="/components/recents/index.html">
@@ -94,7 +95,7 @@
                 <paper-header-panel main>
                     <paper-toolbar>
                         <paper-icon-button icon="menu" paper-drawer-toggle></paper-icon-button>
-                        <div>Page</div>
+                        <page-name name="{{pageName}}" page="{{route}}"></page-name>
                     </paper-toolbar>
                     <iron-pages attr-for-selected="data-route" selected="{{route}}">
                         <page-recents data-route="recents"></page-recents>

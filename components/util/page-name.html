@@ -1,0 +1,15 @@
+<link rel="import" href="/bower_components/polymer/polymer.html">
+<dom-module id="page-name">
+    <template>
+        <div>{{computePageName(name, page)}}</div>
+    </template>
+    <script>
+    Polymer({
+        is: 'page-name',
+        computePageName: function(name, page) {
+            console.log(name, page)
+            return name[page]
+        }
+    })
+    </script>
+</dom-module>
