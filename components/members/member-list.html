@@ -1,0 +1,32 @@
+<link rel="import" href="/bower_components/polymer/polymer.html">
+<link rel="import" href="/bower_components/paper-listbox/paper-listbox.html">
+<link rel="import" href="/bower_components/paper-item/paper-item.html">
+<link rel="import" href="/bower_components/paper-ripple/paper-ripple.html">
+
+<dom-module id="member-list">
+    <template>
+        <paper-listbox>
+            <template is="dom-repeat" items="{{members}}">
+            <paper-item>
+                <paper-ripple></paper-ripple>
+                {{item.name}}
+            </paper-item>
+            </template>
+        </paper-listbox>
+    </template>
+    <script>
+    Polymer({
+        is: 'member-list',
+        properties: {
+            members: {
+                type: Array,
+                value: [
+                    {name: 'Egbert.Sun'},
+                    {name: 'obiwan'},
+                    {name: 'gaor'},
+                ]
+            }
+        }
+    });
+    </script>
+</dom-module>

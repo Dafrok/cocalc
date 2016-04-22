@@ -1,11 +1,22 @@
 <link rel="import" href="/bower_components/polymer/polymer.html">
+<link rel="import" href="./member-list.html">
+
 <dom-module id="page-members">
     <template>
-        <section>Members</section>
+        <section>
+            <member-list></member-list>
+            <!-- <paper-listbox>
+                <template is="dom-repeat" items="{{members}}">
+                <paper-item>
+                    {{member.name}}
+                </paper-item>
+                </template>
+            </paper-listbox> -->
+        </section>
     </template>
     <script>
     Polymer({
-        is: "page-members",
+        is: 'page-members'
     });
     </script>
 </dom-module>
