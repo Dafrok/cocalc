@@ -30,6 +30,7 @@
     "paper-ripple": "*",
     "iron-pages": "~1.0.7",
     "iron-icon": "~1.0.8",
-    "page": "~1.7.1"
+    "page": "~1.7.1",
+    "paper-listbox": "^1.1.2"
   }
 }
