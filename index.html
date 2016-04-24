@@ -17,6 +17,7 @@
         <link rel="import" href="/bower_components/iron-icons/social-icons.html">
         <link rel="import" href="/bower_components/iron-icons/places-icons.html">
         <link rel="import" href="/bower_components/iron-icons/image-icons.html">
+        <link rel="import" href="/bower_components/iron-icons/add.html">
         <link rel="import" href="/bower_components/iron-flex-layout/iron-flex-layout.html">
         <link rel="import" href="/bower_components/iron-pages/iron-pages.html">
         <link rel="import" href="/bower_components/paper-menu/paper-menu.html">
@@ -41,7 +42,7 @@
                     <paper-toolbar>
                         <div>COCALC</div>
                     </paper-toolbar>
-                    <paper-menu attr-for-selected="data-route" selected="[[route]]">
+                    <paper-menu attr-for-selected="data-route" selected="[[route]]" paper-drawer-toggle>
                         <a data-route="recents" href="{{baseUrl}}recents">
                             <paper-item>
                                     <iron-icon icon="notification:event-note"></iron-icon>
@@ -96,7 +97,8 @@
                 <paper-header-panel main>
                     <paper-toolbar>
                         <paper-icon-button icon="menu" paper-drawer-toggle></paper-icon-button>
-                        <page-name name="{{pageName}}" page="{{route}}"></page-name>
+                        <page-name name="{{pageName}}" page="{{route}}" class="title"></page-name>
+                        <paper-icon-button icon="add"></paper-icon-button>
                     </paper-toolbar>
                     <iron-pages attr-for-selected="data-route" selected="{{route}}">
                         <page-recents data-route="recents"></page-recents>

@@ -1,6 +1,6 @@
 (function (document) {
     var app = document.getElementById('app')
-    app.route = 'members'
+    app.route = 'recents'
     app.baseUrl = '/'
     app.scrollPageToTop = function() {
         // app.$.headerPanelMain.scrollToTop(true);
